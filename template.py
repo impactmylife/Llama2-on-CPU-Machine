@@ -22,13 +22,13 @@ list_of_files = [
 
 for filepath in list_of_files:
     filepath = Path(filepath)
-    filedir, filename = os.path.split(filepath)
+    filedir, filename = os.path.split(filepath) # spliting the folder and files
 
-
+# create directory
     if filedir !="":
-        os.makedirs(filedir, exist_ok=True)
-        logging.info(f"Creating directory; {filedir} for the file: {filename}")
-
+        os.makedirs(filedir, exist_ok=True) # creating the folder
+        logging.info(f"Creating directory; {filedir} for the file: {filename}") # it show the log messages
+# creating the file
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass

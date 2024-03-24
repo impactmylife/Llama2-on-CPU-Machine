@@ -1,0 +1,8 @@
+langchain==0.0.225
+ctransformers==0.2.5 # install the ctransformers to be able to load the quantize model
+sentence-transformers==2.2.2 # install the sentence-transformers to be able to load the hugging face embedding model
+pypdf # install the pypdf to be able to load the pdf notebook
+flask
+faiss-cpu # install the flask to be able to load the..
+-e . # install the e to be able to look for the stepup.py file, and will install everything from the setup.py file
+# i.e. It helps to install the setup.py file
